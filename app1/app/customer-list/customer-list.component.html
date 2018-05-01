@@ -1,0 +1,13 @@
+﻿<div>
+
+    <h3>{{model.message}}</h3>
+    <button ng-click="model.changeMessage()">click me</button>
+    <div >
+        
+        <ul >
+            <li  ng-repeat="customer in model.customers track by $index">
+                #{{customer.id}} is {{customer.name}} .
+            </li>
+        </ul>
+    </div>
+</div>
